@@ -1,0 +1,24 @@
+[1.708s] Invoking command in '/home/ryota/robosys2025_kadai2/build/my_disk_monitor': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/ryota/robosys2025_kadai2/build/my_disk_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryota/robosys2025_kadai2/install/my_disk_monitor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ryota/robosys2025_kadai2/build/my_disk_monitor/build --no-deps symlink_data
+[2.071s] running develop
+[2.254s] running egg_info
+[2.254s] creating my_disk_monitor.egg-info
+[2.273s] writing my_disk_monitor.egg-info/PKG-INFO
+[2.277s] writing dependency_links to my_disk_monitor.egg-info/dependency_links.txt
+[2.277s] writing entry points to my_disk_monitor.egg-info/entry_points.txt
+[2.277s] writing requirements to my_disk_monitor.egg-info/requires.txt
+[2.278s] writing top-level names to my_disk_monitor.egg-info/top_level.txt
+[2.279s] writing manifest file 'my_disk_monitor.egg-info/SOURCES.txt'
+[2.314s] reading manifest file 'my_disk_monitor.egg-info/SOURCES.txt'
+[2.316s] writing manifest file 'my_disk_monitor.egg-info/SOURCES.txt'
+[2.334s] running build_ext
+[2.337s] Creating /home/ryota/robosys2025_kadai2/install/my_disk_monitor/lib/python3.12/site-packages/my-disk-monitor.egg-link (link to .)
+[2.338s] Installing monitor script to /home/ryota/robosys2025_kadai2/install/my_disk_monitor/lib/my_disk_monitor
+[2.339s] 
+[2.339s] Installed /home/ryota/robosys2025_kadai2/build/my_disk_monitor
+[2.339s] running symlink_data
+[2.340s] creating /home/ryota/robosys2025_kadai2/install/my_disk_monitor/share/ament_index
+[2.340s] creating /home/ryota/robosys2025_kadai2/install/my_disk_monitor/share/ament_index/resource_index
+[2.340s] creating /home/ryota/robosys2025_kadai2/install/my_disk_monitor/share/ament_index/resource_index/packages
+[2.340s] symbolically linking /home/ryota/robosys2025_kadai2/build/my_disk_monitor/resource/my_disk_monitor -> /home/ryota/robosys2025_kadai2/install/my_disk_monitor/share/ament_index/resource_index/packages
+[2.341s] symbolically linking /home/ryota/robosys2025_kadai2/build/my_disk_monitor/package.xml -> /home/ryota/robosys2025_kadai2/install/my_disk_monitor/share/my_disk_monitor
+[2.384s] Invoked command in '/home/ryota/robosys2025_kadai2/build/my_disk_monitor' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/ryota/robosys2025_kadai2/build/my_disk_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryota/robosys2025_kadai2/install/my_disk_monitor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ryota/robosys2025_kadai2/build/my_disk_monitor/build --no-deps symlink_data

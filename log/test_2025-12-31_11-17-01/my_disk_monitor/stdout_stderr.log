@@ -1,0 +1,87 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: /home/ryota/robosys2025_kadai2/build/my_disk_monitor/.pytest_cache
+rootdir: /home/ryota/robosys2025_kadai2/my_disk_monitor
+plugins: ament-lint-0.17.3, launch-testing-3.4.7, ament-flake8-0.17.3, ament-copyright-0.17.3, launch-testing-ros-0.26.9, ament-pep257-0.17.3, ament-xmllint-0.17.3, cov-4.1.0, colcon-core-0.20.1
+[1mcollecting ... [0m[1m
+collected 3 items                                                              [0m
+
+test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m_________________________________ test_flake8 __________________________________[0m
+[1m[31mtest/test_flake8.py[0m:23: in test_flake8
+    [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[1m[31mE   AssertionError: Found 8 code style errors / warnings:[0m
+[1m[31mE     ./my_disk_monitor/monitor.py:8:1: I100 Import statements are in the wrong order. 'import shutil' should be before 'from std_msgs.msg import Float32' and in a different group.[0m
+[1m[31mE     ./my_disk_monitor/monitor.py:8:1: I201 Missing newline between import groups. 'import shutil' is identified as Stdlib and 'from std_msgs.msg import Float32' is identified as Third Party.[0m
+[1m[31mE     ./my_disk_monitor/monitor.py:10:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./my_disk_monitor/monitor.py:19:47: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./my_disk_monitor/monitor.py:21:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./my_disk_monitor/monitor.py:25:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./my_disk_monitor/monitor.py:28:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./my_disk_monitor/monitor.py:39:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1m[31mE   assert 1 == 0[0m
+----------------------------- Captured stdout call -----------------------------
+
+./my_disk_monitor/monitor.py:8:1: I100 Import statements are in the wrong order. 'import shutil' should be before 'from std_msgs.msg import Float32' and in a different group.
+import shutil
+^
+
+./my_disk_monitor/monitor.py:8:1: I201 Missing newline between import groups. 'import shutil' is identified as Stdlib and 'from std_msgs.msg import Float32' is identified as Third Party.
+import shutil
+^
+
+./my_disk_monitor/monitor.py:10:1: E302 expected 2 blank lines, found 1
+class DiskMonitor(Node):
+^
+
+./my_disk_monitor/monitor.py:19:47: Q000 Double quotes found but single quotes preferred
+        total, used, free = shutil.disk_usage("/")
+                                              ^
+
+./my_disk_monitor/monitor.py:21:1: W293 blank line contains whitespace
+        
+^
+
+./my_disk_monitor/monitor.py:25:1: W293 blank line contains whitespace
+        
+^
+
+./my_disk_monitor/monitor.py:28:1: E302 expected 2 blank lines, found 1
+def main(args=None):
+^
+
+./my_disk_monitor/monitor.py:39:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == '__main__':
+^
+
+2     E302 expected 2 blank lines, found 1
+1     E305 expected 2 blank lines after class or function definition, found 1
+1     I100 Import statements are in the wrong order. 'import shutil' should be before 'from std_msgs.msg import Float32' and in a different group.
+1     I201 Missing newline between import groups. 'import shutil' is identified as Stdlib and 'from std_msgs.msg import Float32' is identified as Third Party.
+1     Q000 Double quotes found but single quotes preferred
+2     W293 blank line contains whitespace
+
+6 files checked
+8 errors
+
+'E'-type errors: 3
+'I'-type errors: 2
+'Q'-type errors: 1
+'W'-type errors: 2
+
+Checked files:
+
+* ./setup.py
+* ./my_disk_monitor/monitor.py
+* ./my_disk_monitor/__init__.py
+* ./test/test_pep257.py
+* ./test/test_copyright.py
+* ./test/test_flake8.py
+- generated xml file: /home/ryota/robosys2025_kadai2/build/my_disk_monitor/pytest.xml -
+[36m[1m=========================== short test summary info ============================[0m
+[31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 8 code style errors / warnings:
+[31m==================== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m[31m in 0.56s[0m[31m ====================[0m

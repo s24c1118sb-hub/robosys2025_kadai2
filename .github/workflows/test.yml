@@ -1,0 +1,26 @@
+name: test
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    container:
+      image: ros:humble
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build and Test
+        shell: bash
+        run: |
+          . /opt/ros/humble/setup.sh
+          mkdir -p ~/ros2_ws/src
+          cp -r . ~/ros2_ws/src/my_disk_monitor
+          cd ~/ros2_ws
+          rosdep update
+          rosdep install -i --from-path src --rosdistro humble -y
+          colcon build
+          colcon test --packages-select my_disk_monitor
+          colcon test-result --all

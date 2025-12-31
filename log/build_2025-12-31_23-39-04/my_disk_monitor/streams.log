@@ -1,0 +1,17 @@
+[0.964s] Invoking command in '/home/ryota/robosys2025_kadai2/build/my_disk_monitor': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/ryota/robosys2025_kadai2/build/my_disk_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryota/robosys2025_kadai2/install/my_disk_monitor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ryota/robosys2025_kadai2/build/my_disk_monitor/build --no-deps symlink_data
+[1.354s] running develop
+[1.565s] running egg_info
+[1.582s] writing my_disk_monitor.egg-info/PKG-INFO
+[1.583s] writing dependency_links to my_disk_monitor.egg-info/dependency_links.txt
+[1.583s] writing entry points to my_disk_monitor.egg-info/entry_points.txt
+[1.583s] writing requirements to my_disk_monitor.egg-info/requires.txt
+[1.583s] writing top-level names to my_disk_monitor.egg-info/top_level.txt
+[1.625s] reading manifest file 'my_disk_monitor.egg-info/SOURCES.txt'
+[1.626s] writing manifest file 'my_disk_monitor.egg-info/SOURCES.txt'
+[1.650s] running build_ext
+[1.650s] Creating /home/ryota/robosys2025_kadai2/install/my_disk_monitor/lib/python3.12/site-packages/my-disk-monitor.egg-link (link to .)
+[1.651s] Installing monitor script to /home/ryota/robosys2025_kadai2/install/my_disk_monitor/lib/my_disk_monitor
+[1.652s] 
+[1.652s] Installed /home/ryota/robosys2025_kadai2/build/my_disk_monitor
+[1.652s] running symlink_data
+[1.697s] Invoked command in '/home/ryota/robosys2025_kadai2/build/my_disk_monitor' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/ryota/robosys2025_kadai2/build/my_disk_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryota/robosys2025_kadai2/install/my_disk_monitor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ryota/robosys2025_kadai2/build/my_disk_monitor/build --no-deps symlink_data
