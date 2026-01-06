@@ -3,7 +3,6 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 import shutil
-
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32
@@ -13,7 +12,6 @@ class DiskMonitor(Node):
     def __init__(self):
         super().__init__('disk_monitor')
         self.publisher_ = self.create_publisher(Float32, 'disk_usage', 10)
-
         timer_period = 2.0
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.get_logger().info('Disk Monitor Node Started')
@@ -25,7 +23,6 @@ class DiskMonitor(Node):
         msg = Float32()
         msg.data = usage_percent
         self.publisher_.publish(msg)
-
         self.get_logger().info(f'Publishing: {msg.data:.2f}%')
 
 
