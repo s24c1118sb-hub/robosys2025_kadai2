@@ -8,8 +8,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-22.04
-    container:
-      image: ros:humble
+    container: ros:humble
     steps:
       - uses: actions/checkout@v3
       - name: Build and Test
@@ -17,10 +16,7 @@ jobs:
         run: |
           . /opt/ros/humble/setup.sh
           mkdir -p ~/ros2_ws/src
-          cp -r my_disk_monitor ~/ros2_ws/src/
+          cp -r . ~/ros2_ws/src/my_disk_monitor
           cd ~/ros2_ws
-          rosdep update
-          rosdep install -i --from-path src --rosdistro humble -y
           colcon build
-          colcon test --packages-select my_disk_monitor
-          colcon test-result --all
+          bash -xv src/my_disk_monitor/test.bash
