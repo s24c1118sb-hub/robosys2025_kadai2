@@ -9,11 +9,15 @@
 | :--- | :--- | :--- |
 | `/disk_usage` | `std_msgs/Float32` | ルートディレクトリのディスク使用率（0.0〜100.0） |
 
-## 実行方法
-1. `colcon build`
-2. `. install/setup.bash`
-3. `ros2 run my_disk_monitor monitor`
-
+## 実行･確認方法
+1. ワークスペースの `src` ディレクトリに本リポジトリをクローンし、ビルドします。
+2. ノードを起動します。
+   ```
+   ros2 run my_disk_monitor monitor
+   ```
+   ※成功するとターミナルに`[INFO] [disk_monitor]: Publishing: X.XX%` と表示されます。
+   ```
+   ```
 ## 必要なソフトウェア
 - ROS 2 Jazzy Jalisco
 - Python 3.12以上
