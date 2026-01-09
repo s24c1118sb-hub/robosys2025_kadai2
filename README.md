@@ -12,7 +12,7 @@
 ## 実行･確認方法
 1. ワークスペースの `src` ディレクトリに本リポジトリをクローンし、ビルドします。
 2. ノードを起動します。
-   ```
+   ```bash
    ros2 run my_disk_monitor monitor
    ```
    ※成功するとターミナルに`[INFO] [disk_monitor]: Publishing: X.XX%` と表示されます。
