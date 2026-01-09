@@ -1,6 +1,6 @@
 # my_disk_monitor
 
-![test](https://github.com/s24c1118sb-hub/robosys2025_kadai2/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/s24c1118sb-hub/my_disk_monitor/actions/workflows/test.yml/badge.svg)
 
 これはPCのディスク使用率を、ROS 2トピックとして配信するパッケージです。
 
