@@ -25,5 +25,5 @@
 - Python 3.12以上
 
 ## ライセンス
-- BSD 3-Clause License
+- このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
 - © 2025 Ryota Miyauchi
