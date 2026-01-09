@@ -14,6 +14,10 @@
 2. `. install/setup.bash`
 3. `ros2 run my_disk_monitor monitor`
 
+## 必要なソフトウェア
+- ROS 2 Jazzy Jalisco
+- Python 3.12以上
+
 ## ライセンス
 - BSD 3-Clause License
 - © 2025 Ryota Miyauchi
